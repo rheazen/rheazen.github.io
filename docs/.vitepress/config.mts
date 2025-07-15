@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
-
+const base = "/blog-demo/"
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  // base: '/blog/',
+  base,
   title: "银耳的博客",
   description: "沉淀学习的地方",
   themeConfig: {
