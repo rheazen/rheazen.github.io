@@ -10,14 +10,12 @@
 		"build": "vitepress build ./",
 		"preview": "vitepress preview ./"
 	},
-	"dependencies": {
-		"vitepress-theme-async": "latest"
-	},
 	"directories": {
 		"doc": "docs"
 	},
 	"devDependencies": {
 		"typescript": "^5.1.6",
-		"vitepress": "^1.1.0"
+		"vitepress": "^1.1.0",
+		"vitepress-theme-async": "latest"
 	}
 }

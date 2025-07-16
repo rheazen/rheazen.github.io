@@ -48,7 +48,7 @@ export default defineConfig({
 			info: [ 
 				{ 
 					key: '地址', 
-					val: '广西省桂林市' 
+					val: '湖南' 
 				} 
 			] 
 		},
