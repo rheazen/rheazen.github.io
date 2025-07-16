@@ -1,19 +1,21 @@
 {
-  "name": "rhazen.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.13.1",
-  "type": "module",
-  "devDependencies": {
-    "vitepress": "^1.6.3"
-  }
+	"name": "rheazen.github.io",
+	"version": "1.0.0",
+	"private": true,
+	"author": "银耳",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"dev": "vitepress dev ./",
+		"build": "vitepress build ./",
+		"preview": "vitepress preview ./"
+	},
+	"directories": {
+		"doc": "docs"
+	},
+	"devDependencies": {
+		"typescript": "^5.1.6",
+		"vitepress": "^1.1.0",
+		"vitepress-theme-async": "latest"
+	}
 }
