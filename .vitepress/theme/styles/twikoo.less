@@ -1,0 +1,233 @@
+:root {
+    --twikoo-white             : #fff;
+    --twikoo-fontcolor         : var(--body-color);
+    --twikoo-background        : var(--theme-bg-color);
+    --twikoo-navbg             : rgba(255, 255, 255, 0.9);
+    --twikoo-card-btn-bg       : var(--theme-bg2-color);
+    --twikoo-post-blockquote-bg: var(--theme-bg2-color);
+    --twikoo-sceondbg          : var(--theme-bg2-color);
+}
+
+:root.dark {
+    --twikoo-fontcolor         : var(--body-color);
+    --twikoo-background        : var(--theme-bg-color);
+    --twikoo-card-btn-bg       : var(--theme-bg2-color);
+    --twikoo-post-blockquote-bg: var(--theme-bg2-color);
+    --twikoo-sceondbg          : var(--theme-bg2-color);
+}
+
+/* 评论 */
+/* ---------------------------------------------------------------- */
+
+/* 填写项标题 */
+.el-input-group__append,
+.el-input-group__prepend {
+    background-color: var(--twikoo-sceondbg) !important;
+    color           : var(--twikoo-fontcolor) !important;
+    border          : 0px solid var(--primary) !important;
+}
+
+/* 输入框 */
+.el-input__inner {
+    background: var(--twikoo-post-blockquote-bg) !important;
+    border    : 0px solid var(--primary) !important;
+    color     : var(--twikoo-fontcolor) !important;
+}
+
+/* 评论输入框 */
+.el-textarea__inner {
+    background: var(--twikoo-post-blockquote-bg) !important;
+    border    : 0px solid var(--primary) !important;
+    color     : var(--twikoo-fontcolor) !important;
+}
+
+/* 加载时背景颜色 */
+.el-loading-mask {
+    background-color: var(--twikoo-background) !important;
+}
+
+/* 评论博主标签圆角 */
+.tk-tag-green.tk-tag-green {
+    padding: 2px 4px;
+    border : 0px solid #e1f3d8;
+}
+
+/* 预览按钮 */
+.el-button {
+    background: var(--twikoo-card-btn-bg) !important;
+    border    : 0px solid var(--primary) !important;
+    color     : var(--twikoo-fontcolor) !important;
+}
+
+.el-button:hover {
+    background: var(--primary) !important;
+    color     : var(--twikoo-white) !important;
+}
+
+/* 发送按钮正常状态 */
+.el-button--primary {
+    background-color: var(--primary) !important;
+    border-color    : var(--primary) !important;
+    color           : var(--twikoo-white) !important;
+}
+
+/* 发送按钮禁用状态 */
+.el-button--primary.is-disabled,
+.el-button--primary.is-disabled:active,
+.el-button--primary.is-disabled:focus,
+.el-button--primary.is-disabled:hover {
+    opacity: 0.4;
+}
+
+.tk-footer {
+    display: none;
+}
+
+.tk-submit.tk-submit {
+    margin-top: 0px !important;
+}
+
+.tk-admin-container {
+    position: fixed !important;
+    z-index : 100;
+}
+
+/* 评论刷新图标 */
+.tk-icon.__comments.__comments {
+    color: var(--primary-70);
+}
+
+/* 评论内容 */
+.tk-comment.tk-comment {
+    margin-top: 0;
+
+    p {
+        margin: 0;
+    }
+
+    .border() {
+        position: relative;
+
+        &::before {
+            content   : '';
+            position  : absolute;
+            height    : 0;
+            width     : 100%;
+            border-top: var(--border-dotted);
+            top       : -1em;
+        }
+    }
+
+    &+.tk-comment {
+        margin-top: 2em;
+
+        >.tk-main {
+            .border();
+        }
+    }
+
+    .tk-comment {
+        .tk-main {
+            .border();
+        }
+    }
+
+    /* 标签信息 */
+    .tk-meta {
+        display    : flex;
+        align-items: center;
+        gap        : 6px;
+    }
+
+    /* 头像 */
+    .tk-avatar {
+        border-radius: 50%;
+    }
+
+    /* 评论时间 */
+    .tk-time {
+        background-color: var(--body-color-5);
+        padding         : 2px 4px;
+        border-radius   : 2px;
+    }
+
+    /* 评论图标 */
+    .tk-action-link {
+
+        .tk-action-count,
+        .tk-action-icon {
+            color: var(--primary-70);
+        }
+    }
+
+    .tk-nick-link:hover {
+        color: var(--primary);
+    }
+
+    /* 回复区域 */
+    .tk-replies {
+        .tk-comment {
+            margin-top: 2em;
+        }
+    }
+}
+
+.twikoo(@color: #000000; @bgColor: #ffffff) {
+    .tk-admin {
+        color           : @color  !important;
+        background-color: @bgColor  !important;
+        backdrop-filter : unset !important;
+
+        .tk-panel {
+            color: @color  !important;
+
+            .tk-tabs {
+                margin: 1rem 0 !important;
+            }
+
+            .tk-tab.__active {
+                color        : @color  !important;
+                border-bottom: unset !important;
+            }
+        }
+
+        .tk-panel-logout,
+        .tk-admin-comment-filter-type {
+            color: @color  !important;
+        }
+
+        .tk-login,
+        .tk-regist {
+            margin: 0 0 0 0;
+        }
+
+        details {
+            padding: 0 !important;
+            border : unset !important;
+
+            summary {
+                padding: 0 !important;
+                margin : 0 !important;
+            }
+        }
+
+        .tk-admin-close {
+            fill: @color;
+        }
+    }
+
+    .OwO .OwO-body {
+        color           : @color;
+        background-color: @bgColor;
+    }
+}
+
+:root {
+    .twikoo();
+    --danmu-bg-color: var(--theme-bg-color);
+    --danmu-color   : var(--body-color);
+
+    &.dark {
+        .twikoo(#ffffff, #494949);
+    }
+}

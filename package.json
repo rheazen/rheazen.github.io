@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "dev": "vitepress dev ./",
+    "build": "vitepress build ./",
+    "preview": "vitepress preview ./"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +14,7 @@
   "packageManager": "pnpm@10.13.1",
   "type": "module",
   "devDependencies": {
-    "vitepress": "^1.6.3"
+    "vitepress": "^1.6.3",
+    "vitepress-theme-async": "^0.0.28"
   }
 }
