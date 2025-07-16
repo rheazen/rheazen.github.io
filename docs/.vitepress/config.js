@@ -10,6 +10,10 @@ export default defineConfig({
       next: "下一页",
     },
     nav: [
+      {
+        text: 'leetcode',
+        link: '/leetcode/',
+      },
       { 
         text: '大前端', 
         items: [

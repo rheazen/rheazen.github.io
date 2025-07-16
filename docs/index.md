@@ -13,6 +13,9 @@ hero:
     - theme: brand
       text: 一起学习大前端
       link: /bigFE
+    - theme: brand
+      text: leetcode 记录
+      link: /leetcode
     - theme: alt
       text: 我的 github
       link: https://github.com/rheazen
