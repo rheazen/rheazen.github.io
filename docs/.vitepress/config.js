@@ -36,8 +36,7 @@ export default defineConfig({
       "/bigFE/JS/": {
         text: "html",
         items: [
-          { text: 'JS1', link: '/bigFE/JS/js1' },
-          { text: 'JS2', link: '/bigFE/JS/js2' },
+          { text: 'JS', link: '/bigFE/JS' },
         ]
       },
       "/bigFE/React/": {
