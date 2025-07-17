@@ -1,5 +1,10 @@
 ---
-outline: deep
+title: 记一次写 JS 动画的 bug
+date: 2025-07-16
+tags:
+  - JS
+  - 动画
+  - bug
 ---
 
 # 记一次写 JS 动画的 bug

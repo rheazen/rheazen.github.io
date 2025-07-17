@@ -1,5 +1,9 @@
 ---
-outline: deep
+title: 严格模式下useEffect 里 new 对象踩的坑
+date: 2025-07-16
+tags:
+  - React
+  - StrictMode
 ---
 
 # 前言
