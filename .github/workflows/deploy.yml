@@ -28,7 +28,12 @@ jobs:
               with:
                 node-version: '20'
 
-                # 使用 pnpm 修改
+            - name: Install pnpm
+              uses: pnpm/action-setup@v2
+              with:
+                version: latest
+                run_install: false
+
             - name: Install dependencies
               run: pnpm install --frozen-lockfile
 
