@@ -1,4 +1,3 @@
-@ -0,0 +1,97 @@
 name: Deploy Pages
 
 # 触发条件，push到main分支或者pull request到main分支
