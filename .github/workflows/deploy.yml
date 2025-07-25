@@ -28,8 +28,9 @@ jobs:
               with:
                 node-version: '20'
 
+                # 使用 pnpm 修改
             - name: Install dependencies
-              run: npm ci
+              run: pnpm install --frozen-lockfile
 
             - name: Build project
               run: pnpm run build
